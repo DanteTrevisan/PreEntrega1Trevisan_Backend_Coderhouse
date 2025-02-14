@@ -10,7 +10,7 @@ import { apiRoute, productsRoute, cartsRoute } from './utils/routes';
 const app: Express = express();
 
 app.listen(PORT, () => {
-    console.log(`Servidor de Express.js en puerto: ${PORT}`)
+    console.log(`Servidor de Express.js en puerto:${PORT}`)
 });
 
 app.use(express.urlencoded({ extended: true}));
