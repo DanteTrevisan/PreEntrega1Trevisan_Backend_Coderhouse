@@ -58,7 +58,7 @@ class ProductManager {
         callbackStatus(null)
     }
 
-    async getProducts(id: number): Promise<IdProduct[]> {
+    async getProducts(): Promise<IdProduct[]> {
         await this.readProductsFromFileAsyncPromises();
         return this.products
     }
