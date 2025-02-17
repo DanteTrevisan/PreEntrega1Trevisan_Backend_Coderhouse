@@ -45,11 +45,11 @@ El servidor debe estar basado en Node.js y Express, y debe escuchar en el puerto
     **GET /:cid**:
     - Debe listar los productos que pertenecen al carrito con el cid proporcionado.
 
-**POST /:cid/product/:pid**:
-    - Debe agregar el producto al arreglo products del carrito seleccionado, utilizando el siguiente formato:
-        - product: Solo debe contener el ID del producto.
-        - quantity: Debe contener el número de ejemplares de dicho producto (se agregará de uno en uno).
-    Si un producto ya existente intenta agregarse, se debe incrementar el campo quantity de dicho producto.
+   **POST /:cid/product/:pid**:
+       - Debe agregar el producto al arreglo products del carrito seleccionado, utilizando el siguiente formato:
+           - product: Solo debe contener el ID del producto.
+           - quantity: Debe contener el número de ejemplares de dicho producto (se agregará de uno en uno).
+       Si un producto ya existente intenta agregarse, se debe incrementar el campo quantity de dicho producto.
 
 ## Entrega
 
