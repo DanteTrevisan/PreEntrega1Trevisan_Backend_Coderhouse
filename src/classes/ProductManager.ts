@@ -2,7 +2,9 @@ import IdProduct from "../interfaces/IdProduct";
 import UpdateProduct from "../interfaces/UpdateProduct";
 import Product from "./Product";
 import { generateId } from "../utils/functions";
-import { readDataFromJsonFileAsyncPromises, writeDataIntoJsonFileAsyncPromises } from "../utils/files";
+import { readDataFromJsonFileAsyncPromises,
+    writeDataIntoJsonFileAsyncPromises
+} from "../utils/files";
 
 class ProductManager {
     path: string;

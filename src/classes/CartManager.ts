@@ -2,7 +2,10 @@ import { generateId } from "../utils/functions";
 import Cart from "./Cart";
 import IdCart from "../interfaces/IdCarts";
 import CartProduct from "./CartProduct";
-import { readDataFromJsonFileAsyncPromises, writeDataIntoJsonFileAsyncPromises } from "../utils/files";
+import { 
+    readDataFromJsonFileAsyncPromises,
+    writeDataIntoJsonFileAsyncPromises
+} from "../utils/files";
 
 
 export class CartManager {

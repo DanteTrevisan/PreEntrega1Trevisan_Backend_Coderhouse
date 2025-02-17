@@ -10,10 +10,10 @@ import validateId from "../validators/ids";
 
 const cartsRouter: Router = Router();
 
-cartsRouter.get("/", async(req: Request, res: Response) => {
+/**GET ENDPOINT */
+cartsRouter.get("/:cid", async(req: Request, res: Response) => {
     const cartManager: CartManager = new CartManager(cartsPath);
     const cid: number = validateId(req.params.cid);
-
     if (cid) {
         const idCart: IdCart = await cartManager.getCartById(cid);
         if (idCart) {
